@@ -2,9 +2,29 @@
 
 ## Install
 
-- **Windows:** [`ssb-patchwork-setup-$$VERSION.exe`][exe]
-- **macOS:** [`Patchwork-$$VERSION.dmg`][dmg] (you may need to [allow apps from "unidentified" developers](https://support.apple.com/kb/PH25088))
-- **Linux:** [`ssb-patchwork-$$VERSION-x86_64.AppImage`][appimage] (you will need to [make it executable](https://docs.appimage.org/user-guide/run-appimages.html))
+Use [your favorite package manager](https://github.com/ssbc/patchwork#installation) or install manually.
+
+### Windows
+
+**[`Patchwork-Setup-$$VERSION.exe`][exe]**
+
+### macOS
+
+**[`Patchwork-$$VERSION.dmg`][dmg]**
+
+You must [allow apps from "unidentified" developers](https://support.apple.com/kb/PH25088).
+
+### Linux
+
+**[`Patchwork-$$VERSION.AppImage`][appimage]**
+
+You may need to [fix the sandbox](https://github.com/ssbc/patchwork/blob/master/docs/INSTALL.md#sandbox).
+
+There are also releases for Debian and Snapcraft:
+
+- **Debian:** [`ssb-patchwork_$$VERSION_amd64.deb`][deb]
+- **Snapcraft:** [`ssb-patchwork_$$VERSION_amd64.snap`][snap]
+  - You must install with `snap install --dangerous` because it's unsigned.
 
 ## Getting started
 
@@ -20,6 +40,11 @@ $$CHANGES
 
 :sos: [Need help? Please create an issue!](https://github.com/ssbc/patchwork/issues/new)
 
+[appimage]: https://github.com/ssbc/patchwork/releases/download/v$$VERSION/Patchwork-$$VERSION.AppImage
 [dmg]: https://github.com/ssbc/patchwork/releases/download/v$$VERSION/Patchwork-$$VERSION.dmg
-[exe]: https://github.com/ssbc/patchwork/releases/download/v$$VERSION/ssb-patchwork-setup-$$VERSION.exe
-[appimage]: https://github.com/ssbc/patchwork/releases/download/v$$VERSION/ssb-patchwork-$$VERSION-x86_64.AppImage
+[deb]: https://github.com/ssbc/patchwork/releases/download/v$$VERSION/ssb-patchwork_$$VERSION_amd64.deb
+[snap]: https://github.com/ssbc/patchwork/releases/download/v$$VERSION/ssb-patchwork_$$VERSION.snap
+[exe]: https://github.com/ssbc/patchwork/releases/download/v$$VERSION/Patchwork-Setup-$$VERSION.exe
+[npm]: https://npmjs.org/
+[yarn]: https://yarnpkg.com/en/
+[yay]: https://github.com/Jguer/yay
